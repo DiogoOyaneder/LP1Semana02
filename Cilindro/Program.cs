@@ -11,8 +11,10 @@ namespace Cilindro
             Console.Write("Raio: ");
             double R = double.Parse(Console.ReadLine());
             double V = Math.PI * Math.Pow(R, 2) * H;
-           Console.WriteLine($"{V:F3}");
+            Console.WriteLine($"{V:F3}");
             
+            double A = 2 * Math.PI *R * (R + H);
+            Console.WriteLine($"{A:F3}");
         }
     }
 }
